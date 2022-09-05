@@ -1,5 +1,5 @@
 # 📖 · Mooshaf (Work in Progress)
-My First ever Android App I've Created, This is Digitalized Mushaf, Based Kotlin App.
+My First ever Android App I've Created, This is Digitalized Mushaf, Kotlin Based App.
 
 ## 🛠 · Upcoming Early Access Features!
 ```
