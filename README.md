@@ -8,7 +8,7 @@ My First ever Android App I've Created, This is Digitalized Mushaf, Kotlin Based
 🔍 · Adjustable Arabic Font Size
 👁 · Focus Reading Mode (Remove Translation on Quran)
 ``` 
-`- Murrottal Feature will be added soon!`
+- Murrottal Feature will be added soon!
 
 ## 📷 · UI/UX Design Concept
 Here's the App Concept not really the same tho
