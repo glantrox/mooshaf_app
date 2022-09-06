@@ -3,11 +3,10 @@ My First ever Android App I've Created, This is Digitalized Mushaf, Kotlin Based
 
 ## 🛠 · Upcoming Early Access Features!
 ```
-· Murottal (Will be Adding some Qari')
 · Shalat Schedule & Adzan Feature
 · Qibla Finder
 · Adjustable Arabic Font Size
-```
+``` - Murrottal Feature will be added soon!
 
 ## 📷 · UI/UX Design Concept
 Here's the App Concept not really the same tho
