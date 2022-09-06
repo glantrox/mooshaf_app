@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- User Interface Colors -->
+    <color name="mainRed">#EB5F5F</color>
+    <color name="defaultBlack">#000000</color>
+    <color name="defaultGray">#9A9A9A</color>
+    <color name="defaultWhite">#FFFFFFFF</color>
+    <color name="mainWhite">#FFFFFFFF</color>
+    <color name="mainBlack">#000000</color>
+
+    <color name="iconPurple">#DAC9FF</color>
+    <color name="iconBlue">#ACE3FF</color>
+    <color name="iconYellow">#FFDC86</color>
+    <color name="iconGreen">#C0FF9F</color>
+    <color name="iconRed">#FFB2A8</color>
+    <color name="iconGray">#858DAB</color>
+    <color name="iconOrange1">#FFD2AB</color>
+    <color name="iconOrange2">#FECA80</color>
+
+
+</resources>

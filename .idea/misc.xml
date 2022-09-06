@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/asseticon_home.xml" value="0.1585" />
+        <entry key="app/src/main/res/drawable/icon_back3.xml" value="0.1365" />
+        <entry key="app/src/main/res/layout/activity_ayah.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2317428588867187" />
+        <entry key="app/src/main/res/layout/activity_quran.xml" value="0.1748799641927083" />
+        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.21616668701171893" />
+        <entry key="app/src/main/res/layout/fragment_quran.xml" value="0.20596160888671877" />
+        <entry key="app/src/main/res/layout/item_quran.xml" value="0.20445353190104168" />
+        <entry key="app/src/main/res/layout/item_quranreading.xml" value="0.25556589762369797" />
+        <entry key="app/src/main/res/layout/item_surah.xml" value="0.2718439737955729" />
+        <entry key="app/src/main/res/menu/menu_navbar.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
