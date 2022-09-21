@@ -2,20 +2,25 @@
 <resources>
     <!-- User Interface Colors -->
     <color name="mainRed">#EB5F5F</color>
-    <color name="defaultBlack">#000000</color>
+    <color name="defaultBlack">#FFFFFF</color>
     <color name="defaultGray">#9A9A9A</color>
-    <color name="defaultWhite">#FFFFFFFF</color>
-    <color name="mainWhite">#393939</color>
+    <color name="defaultGray1">#FDFDFD</color>
+    <color name="defaultGray2">#676767</color>
+    <color name="defaultWhite">#535353</color>
+    <color name="mainWhite">#FFFFFF</color>
     <color name="mainBlack">#000000</color>
 
-    <color name="iconPurple">#DAC9FF</color>
-    <color name="iconBlue">#ACE3FF</color>
-    <color name="iconYellow">#FFDC86</color>
-    <color name="iconGreen">#C0FF9F</color>
-    <color name="iconRed">#FFB2A8</color>
-    <color name="iconGray">#858DAB</color>
-    <color name="iconOrange1">#FFD2AB</color>
-    <color name="iconOrange2">#FECA80</color>
+    <color name="defaultBackground">#272727</color>
+    <color name="defaultDivider">#E3E3E3</color>
+
+    <color name="iconPurple">#817697</color>
+    <color name="iconBlue">#7194A6</color>
+    <color name="iconYellow">#BCA263</color>
+    <color name="iconGreen">#799F65</color>
+    <color name="iconRed">#A87771</color>
+    <color name="iconGray">#595F73</color>
+    <color name="iconOrange1">#A3866D</color>
+    <color name="iconOrange2">#A38254</color>
 
 
 </resources>

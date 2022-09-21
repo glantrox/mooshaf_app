@@ -18,5 +18,18 @@
         <action
             android:id="@+id/action_navigation_quran_to_navigation_home"
             app:destination="@id/navigation_home" />
+
     </fragment>
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.app_project_suhuf.FragmentSettings"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_navigation_quran_to_navigation_home"
+            app:destination="@id/navigation_home" />
+
+    </fragment>
+
 </navigation>

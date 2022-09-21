@@ -6,7 +6,7 @@
         <!-- Secondary brand color. -->
 
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" tools:targetApi="l">#EB5F5F</item>
         <!-- Customize your theme here. -->
     </style>
 </resources>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <LinearLayout
@@ -27,11 +27,11 @@
                 android:id="@+id/text_surah_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="8dp"
+                android:padding="5dp"
                 android:textStyle="bold"
                 android:text="Al Fatihah"
                 android:textSize="20dp"
-                android:textColor="@color/mainBlack">
+                android:textColor="@color/defaultBlack">
             </TextView>
 
             <TextView
@@ -59,6 +59,7 @@
     <com.google.android.material.divider.MaterialDivider
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:dividerColor="@color/defaultGray2"
         android:layout_margin="5dp"/>
 
 

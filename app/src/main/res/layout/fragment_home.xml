@@ -5,11 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/defaultWhite">
+    android:background="@color/defaultBackground">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -32,7 +33,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="240dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/dashboard_imagemountain"></ImageView>
+                        android:src="@drawable/dashboard_imagemountain"/>
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -46,7 +47,7 @@
                             android:gravity="center"
                             android:paddingBottom="24dp"
                             android:text="DZUHUR"
-                            android:textColor="@color/defaultWhite" />
+                            android:textColor="@color/mainWhite" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -55,7 +56,7 @@
                             android:gravity="center"
                             android:paddingTop="39dp"
                             android:text="11:59"
-                            android:textColor="@color/defaultWhite"
+                            android:textColor="@color/mainWhite"
                             android:textSize="60dp" />
                     </RelativeLayout>
 
@@ -70,7 +71,8 @@
                     android:layout_alignParentBottom="true"
                     android:layout_centerInParent="true"
                     app:cardBackgroundColor="@color/mainRed"
-                    app:cardCornerRadius="15dp">
+                    app:cardCornerRadius="15dp"
+                    app:strokeWidth="0dp">
 
                     <ImageView
                         android:id="@+id/iconarrow_progresscard"
@@ -87,7 +89,7 @@
                         android:paddingStart="20dp"
                         android:paddingTop="10dp"
                         android:text="Start Reading"
-                        android:textColor="@color/defaultWhite"
+                        android:textColor="@color/mainWhite"
                         android:textSize="28dp" />
 
                     <TextView
@@ -96,7 +98,7 @@
                         android:paddingStart="20dp"
                         android:paddingTop="43dp"
                         android:text="Last Read Al Qariah"
-                        android:textColor="@color/defaultWhite" />
+                        android:textColor="@color/mainWhite" />
 
 
                 </com.google.android.material.card.MaterialCardView>
@@ -115,15 +117,18 @@
 
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    >
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:layout_gravity="center">
 
                         <com.google.android.material.card.MaterialCardView
                             android:id="@+id/icon_qurandashboard"
@@ -132,7 +137,8 @@
                             app:cardBackgroundColor="@color/iconPurple"
                             app:cardCornerRadius="12dp"
                             android:background="?selectableItemBackground"
-                            android:layout_marginHorizontal="8dp"
+                            android:layout_marginHorizontal="12dp"
+                            app:strokeWidth="0dp"
                             >
 
                             <ImageView
@@ -149,7 +155,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Quran"
+                            android:text="Hadits"
                             android:layout_gravity="center"
                             android:textColor="@color/defaultBlack"/>
 
@@ -166,7 +172,8 @@
                             android:layout_height="68dp"
                             app:cardBackgroundColor="@color/iconBlue"
                             app:cardCornerRadius="12dp"
-                            android:layout_marginHorizontal="8dp">
+                            android:layout_marginHorizontal="12dp"
+                            app:strokeWidth="0dp">
 
                             <ImageView
                                 android:layout_width="wrap_content"
@@ -198,7 +205,8 @@
                             android:layout_height="68dp"
                             app:cardBackgroundColor="@color/iconYellow"
                             app:cardCornerRadius="12dp"
-                            android:layout_marginHorizontal="8dp">
+                            android:layout_marginHorizontal="12dp"
+                            app:strokeWidth="0dp">
 
                             <ImageView
                                 android:layout_width="wrap_content"
@@ -224,38 +232,13 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <com.google.android.material.card.MaterialCardView
-                            android:id="@+id/icon_zakatdashboard"
-                            android:layout_width="68dp"
-                            android:layout_height="68dp"
-                            app:cardBackgroundColor="@color/iconGreen"
-                            app:cardCornerRadius="12dp"
-                            android:layout_marginHorizontal="8dp">
 
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/dashboardicon_zakat"
-                                android:scaleType="centerInside"
-                                android:scaleY="0.65"
-                                android:scaleX="0.65"/>
-
-                        </com.google.android.material.card.MaterialCardView>
-
-
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Zakat"
-                            android:textColor="@color/defaultBlack"
-                            android:layout_gravity="center"/>
 
                     </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
                     android:gravity="center">
@@ -272,7 +255,8 @@
                             android:layout_height="68dp"
                             app:cardBackgroundColor="@color/iconRed"
                             app:cardCornerRadius="12dp"
-                            android:layout_marginHorizontal="8dp">
+                            android:layout_marginHorizontal="12dp"
+                            app:strokeWidth="0dp">
 
                             <ImageView
                                 android:layout_width="wrap_content"
@@ -304,7 +288,8 @@
                             android:layout_height="68dp"
                             app:cardBackgroundColor="@color/iconGray"
                             app:cardCornerRadius="12dp"
-                            android:layout_marginHorizontal="8dp">
+                            android:layout_marginHorizontal="12dp"
+                            app:strokeWidth="0dp">
 
                             <ImageView
                                 android:layout_width="wrap_content"
@@ -336,7 +321,9 @@
                             android:layout_height="68dp"
                             app:cardBackgroundColor="@color/iconOrange1"
                             app:cardCornerRadius="12dp"
-                            android:layout_marginHorizontal="8dp">
+                            android:layout_marginHorizontal="12dp"
+                            app:strokeWidth="0dp"
+                            >
 
                             <ImageView
                                 android:layout_width="wrap_content"
@@ -362,30 +349,9 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <com.google.android.material.card.MaterialCardView
-                            android:id="@+id/icon_masjiddashboard"
-                            android:layout_width="68dp"
-                            android:layout_height="68dp"
-                            app:cardBackgroundColor="@color/iconOrange2"
-                            app:cardCornerRadius="12dp"
-                            android:layout_marginHorizontal="8dp">
 
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/dashboardicon_masjid"
-                                android:scaleType="centerInside"
-                                android:scaleY="0.65"
-                                android:scaleX="0.65"/>
 
-                        </com.google.android.material.card.MaterialCardView>
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Masjid"
-                            android:textColor="@color/defaultBlack"
-                            android:layout_gravity="center"/>
 
                     </LinearLayout>
                 </LinearLayout>
@@ -393,7 +359,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="210dp"
+                android:layout_height="350dp"
                 android:orientation="vertical"
                 android:layout_marginTop="30dp">
 
@@ -407,7 +373,9 @@
 
                 <HorizontalScrollView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    >
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -436,7 +404,7 @@
                                 android:fontFamily="@font/inter_bold"
                                 android:layout_marginTop="142dp"
                                 android:layout_marginStart="15dp"
-                                android:textColor="@color/defaultWhite"/>
+                                android:textColor="@color/mainWhite"/>
 
                         </com.google.android.material.card.MaterialCardView>
 
@@ -460,7 +428,7 @@
                                 android:fontFamily="@font/inter_bold"
                                 android:layout_marginTop="142dp"
                                 android:layout_marginStart="15dp"
-                                android:textColor="@color/defaultWhite"/>
+                                android:textColor="@color/mainWhite"/>
 
                         </com.google.android.material.card.MaterialCardView>
 
@@ -484,7 +452,7 @@
                                 android:fontFamily="@font/inter_bold"
                                 android:layout_marginTop="142dp"
                                 android:layout_marginStart="15dp"
-                                android:textColor="@color/defaultWhite"/>
+                                android:textColor="@color/mainWhite"/>
 
                         </com.google.android.material.card.MaterialCardView>
 

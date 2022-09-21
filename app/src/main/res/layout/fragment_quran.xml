@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".FragmentQuran"
-    android:background="@color/defaultWhite">
+    android:background="@color/defaultBackground">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -19,47 +19,47 @@
             android:scaleType="centerCrop"
             android:src="@drawable/surahselection_qari1" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:gravity="center"
-            android:paddingTop="15dp">
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:gravity="center"-->
+<!--            android:paddingTop="15dp">-->
 
 
 
-<!--            <com.google.android.material.card.MaterialCardView-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="40dp"-->
-<!--                android:layout_marginStart="5dp"-->
-<!--                android:layout_weight="0.33"-->
-<!--                app:cardBackgroundColor="@color/defaultWhite"-->
-<!--                app:cardCornerRadius="13dp">-->
+<!--&lt;!&ndash;            <com.google.android.material.card.MaterialCardView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="40dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginStart="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_weight="0.33"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:cardBackgroundColor="@color/defaultWhite"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:cardCornerRadius="13dp">&ndash;&gt;-->
 
-<!--                <RelativeLayout-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="match_parent"-->
-<!--                    android:backgroundTint="@color/defaultWhite">-->
+<!--&lt;!&ndash;                <RelativeLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:backgroundTint="@color/defaultWhite">&ndash;&gt;-->
 
-<!--                    <TextView-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:layout_centerInParent="true"-->
-<!--                        android:drawableStart="@drawable/icon_search"-->
-<!--                        android:drawablePadding="6dp"-->
-<!--                        android:paddingStart="12dp"-->
-<!--                        android:text="Search Qari'"-->
-<!--                        android:textColor="@color/defaultGray"-->
-<!--                        android:textSize="18dp" />-->
+<!--&lt;!&ndash;                    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_centerInParent="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:drawableStart="@drawable/icon_search"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:drawablePadding="6dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:paddingStart="12dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:text="Search Qari'"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textColor="@color/defaultGray"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textSize="18dp" />&ndash;&gt;-->
 
-<!--                </RelativeLayout>-->
-
-
-<!--            </com.google.android.material.card.MaterialCardView>-->
+<!--&lt;!&ndash;                </RelativeLayout>&ndash;&gt;-->
 
 
-        </LinearLayout>
+<!--&lt;!&ndash;            </com.google.android.material.card.MaterialCardView>&ndash;&gt;-->
+
+
+<!--        </LinearLayout>-->
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -72,8 +72,8 @@
                 android:fontFamily="@font/inter_bold"
                 android:lineSpacingMultiplier="0.80"
                 android:paddingStart="10dp"
-                android:text="Surah\nAl Selection"
-                android:textColor="@color/defaultWhite"
+                android:text="Surah\nSelection"
+                android:textColor="@color/mainWhite"
                 android:textSize="40dp" />
 
             <TextView
@@ -84,7 +84,7 @@
                 android:paddingStart="10dp"
                 android:text="القرآن الكريم "
                 android:textAlignment="viewStart"
-                android:textColor="@color/defaultWhite"
+                android:textColor="@color/mainWhite"
                 android:textSize="15dp" />
 
 <!--            <LinearLayout-->

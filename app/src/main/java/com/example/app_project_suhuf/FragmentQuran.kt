@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
@@ -21,6 +22,7 @@ class FragmentQuran: Fragment(R.layout.fragment_quran) {
 
         val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerview_surah)
         val database = QuranDataBase.getInstance(requireContext())
+
 
         lifecycleScope.launch {
             val surahList = database.QuranDao().getSurahList()

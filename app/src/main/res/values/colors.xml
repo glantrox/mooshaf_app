@@ -4,9 +4,14 @@
     <color name="mainRed">#EB5F5F</color>
     <color name="defaultBlack">#000000</color>
     <color name="defaultGray">#9A9A9A</color>
+    <color name="defaultGray1">#9A9A9A</color>
+    <color name="defaultGray2">#E4E4E4</color>
     <color name="defaultWhite">#FFFFFFFF</color>
     <color name="mainWhite">#FFFFFFFF</color>
     <color name="mainBlack">#000000</color>
+
+    <color name="defaultBackground">#FFFFFF</color>
+    <color name="defaultDivider">#E3E3E3</color>
 
     <color name="iconPurple">#DAC9FF</color>
     <color name="iconBlue">#ACE3FF</color>
@@ -16,6 +21,7 @@
     <color name="iconGray">#858DAB</color>
     <color name="iconOrange1">#FFD2AB</color>
     <color name="iconOrange2">#FECA80</color>
+
 
 
 </resources>

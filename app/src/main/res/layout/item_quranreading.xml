@@ -1,62 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="16dp">
+    >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:padding="12dp">
+       <RelativeLayout
+           android:id="@+id/top_navbar"
+           android:layout_width="match_parent"
+           android:layout_height="50dp">
+
+       <ImageView
+           android:id="@+id/backbutton_surah"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:src="@drawable/icon_back3"/>
+
+           <TextView
+               android:id="@+id/text_surah_name"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="25dp"
+               android:layout_marginTop="4dp"
+               android:fontFamily="@font/inter_bold"
+               android:text="Surah Name - Arabic "
+               android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+               android:textSize="27dp" />
+
+
+       <com.google.android.material.card.MaterialCardView
+           android:id="@+id/menu_button"
+           android:layout_width="39dp"
+           android:layout_height="39dp"
+           app:cardBackgroundColor="@color/defaultGray"
+           android:layout_alignParentEnd="true"
+           android:layout_centerInParent="true"
+           app:strokeWidth="0dp">
+           <ImageButton
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_alignParentEnd="true"
+               android:src="@drawable/ic_baseline_menu_24"
+               app:tint="@color/mainWhite"
+               android:background="@color/defaultGray"/>
+
+       </com.google.android.material.card.MaterialCardView>
+       </RelativeLayout>
+
+   </LinearLayout>
+
+
+
+
+
+
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/top_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:dividerColor="@color/defaultGray" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:orientation="vertical">
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_marginTop="8dp"
+            android:id="@+id/text_ayah_quran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+            android:fontFamily="@font/arabic_uthmanichafs"
+            android:layout_marginBottom="16dp"
+            android:lineHeight="50dp"
+            android:textSize="40dp"
+            android:textAlignment="viewEnd"
+            android:text="لَمْ يَكُنِ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَٰبِ وَٱلْمُشْرِكِينَ مُنفَكِّينَ حَتَّىٰ تَأْتِيَهُمُ ٱلْبَيِّنَةُ"/>
 
-        <ImageView
-            android:id="@+id/backbutton_surah"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:src="@drawable/icon_back3"/>
-
-        <TextView
-            android:id="@+id/text_surah_name"
-            android:layout_width="wrap_content"
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_ayah_translation"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
-            android:layout_marginBottom="5dp"
-            android:text="Surah Name - Arabic "
-            android:fontFamily="@font/inter_bold"
-            android:textSize="30dp"
-            android:textAlignment="viewStart"
-            />
-
-
-
+            android:text="Orang-orang kafir yakni ahli Kitab dan orang-orang musyrik (mengatakan bahwa mereka) tidak akan meninggalkan (agamanya) sebelum datang kepada mereka bukti yang nyata"
+            android:fontFamily="@font/inter_regular"
+            android:textAlignment="textEnd"
+            android:textSize="18dp"/>
     </LinearLayout>
-
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/text_ayah_quran"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
-        android:fontFamily="@font/arabic_uthmanichafs"
-        android:layout_marginBottom="16dp"
-        android:lineHeight="50dp"
-        android:textSize="40dp"
-        android:textAlignment="viewEnd"
-        android:text="لَمْ يَكُنِ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَٰبِ وَٱلْمُشْرِكِينَ مُنفَكِّينَ حَتَّىٰ تَأْتِيَهُمُ ٱلْبَيِّنَةُ"/>
-
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/text_ayah_translation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
-        android:text="Orang-orang kafir yakni ahli Kitab dan orang-orang musyrik (mengatakan bahwa mereka) tidak akan meninggalkan (agamanya) sebelum datang kepada mereka bukti yang nyata"
-        android:fontFamily="@font/inter_regular"
-        android:textAlignment="textEnd"/>
 
     <com.google.android.material.divider.MaterialDivider
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        app:dividerColor="@color/defaultGray"/>
+        app:dividerColor="@color/defaultDivider"
+        android:layout_margin="16dp"/>
+
 
 </LinearLayout>
+

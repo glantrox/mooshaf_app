@@ -14,6 +14,10 @@
         android:theme="@style/Theme.Project_suhuf"
         tools:targetApi="31">
         <activity
+            android:name=".FragmentSettings"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
             android:name=".QuranActivity"
             android:exported="true" />
         <activity
