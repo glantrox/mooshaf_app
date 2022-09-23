@@ -6,7 +6,7 @@ My First ever Android App I've Created, This is Digitalized Mushaf, Kotlin Based
 🕌 · Shalat Schedule & Adzan Feature
 🕋 · Qibla Finder
 🔍 · Adjustable Arabic Font Size
-👁 · Focus Reading Mode (Remove Translation on Quran)
+👁 · Focus Reading Mode (Remove Translation in Quran)
 ``` 
 - Murrottal Feature will be added soon!
 
