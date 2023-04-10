@@ -1,4 +1,5 @@
-# 📖 · Mooshaf (Work in Progress)
+![foto](https://cdn.discordapp.com/attachments/988735884843184210/1095129768732663849/A4_-_1.png)
+# 📖 · Mooshaf
 My First ever Android App I've Created, This is Digitalized Mushaf, Kotlin Based App.
 
 ## 🛠 · Upcoming Early Access Features!
