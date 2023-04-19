@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context="com.hamas.app_project_suhuf.FragmentHome"
     android:background="@color/defaultBackground">
 
     <ScrollView
@@ -40,19 +40,23 @@
                         android:layout_height="120dp">
 
                         <TextView
+                            android:id="@+id/tv_date"
+                            android:format24Hour=":ss "
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_centerInParent="true"
                             android:fontFamily="@font/inter_regular"
                             android:gravity="center"
                             android:paddingBottom="24dp"
-                            android:text="DZUHUR"
+                            android:text="THURSDAY"
                             android:textColor="@color/mainWhite" />
 
-                        <TextView
+                        <TextClock
+                            android:id="@+id/tc_HourShalat"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/inter_bold"
+                            android:format12Hour="hh:mm"
                             android:gravity="center"
                             android:paddingTop="39dp"
                             android:text="11:59"
@@ -73,16 +77,69 @@
                     app:cardBackgroundColor="@color/mainRed"
                     app:cardCornerRadius="15dp"
                     app:strokeWidth="0dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <androidx.coordinatorlayout.widget.CoordinatorLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:clickable="false"
+                            >
 
-                    <ImageView
-                        android:id="@+id/iconarrow_progresscard"
-                        android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:paddingStart="250dp"
-                        android:paddingTop="10dp"
-                        android:src="@drawable/icon_back1" />
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+
+                                    android:id="@+id/progresstext_card"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_gravity="bottom"
+                                    android:layout_marginTop="95dp"
+                                    android:layout_marginEnd="13dp"
+                                    android:fontFamily="@font/inter_regular"
+                                    android:text="12% "
+                                    android:textColor="@color/mainWhite"
+                                    android:textSize="12dp" />
+
+                                <com.google.android.material.slider.Slider
+                                    android:id="@+id/progressbar_reading"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_gravity="bottom"
+                                    android:layout_marginHorizontal="12dp"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:clickable="false"
+                                    android:enabled="true"
+                                    android:longClickable="false"
+                                    android:valueFrom="0.0"
+                                    android:valueTo="100.0"
+                                    app:labelBehavior="gone"
+                                    app:thumbRadius="@null"
+                                    app:tickVisible="false"
+                                    app:trackColorActive="@color/defaultGray1" />
+                            </RelativeLayout>
+                        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+                    </RelativeLayout>
+
+                    <!--                    <ImageView-->
+                    <!--                        android:id="@+id/iconarrow_progresscard"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="30dp"-->
+                    <!--                        android:paddingStart="250dp"-->
+                    <!--                        android:paddingTop="10dp"-->
+                    <!--                        android:src="@drawable/icon_back1" />-->
 
                     <TextView
+                        android:id="@+id/tv_continueOrStartRead"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/inter_bold"
@@ -93,12 +150,25 @@
                         android:textSize="28dp" />
 
                     <TextView
+                        android:id="@+id/tv_lastreadSurah"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingStart="20dp"
-                        android:paddingTop="43dp"
+                        android:paddingTop="49dp"
+                        android:textSize="14dp"
                         android:text="Last Read Al Qariah"
                         android:textColor="@color/mainWhite" />
+
+
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent" >
+
+
+
+
+                   </RelativeLayout>
 
 
                 </com.google.android.material.card.MaterialCardView>
@@ -131,7 +201,7 @@
                         android:layout_gravity="center">
 
                         <com.google.android.material.card.MaterialCardView
-                            android:id="@+id/icon_qurandashboard"
+
                             android:layout_width="68dp"
                             android:layout_height="68dp"
                             app:cardBackgroundColor="@color/iconPurple"
@@ -139,9 +209,11 @@
                             android:background="?selectableItemBackground"
                             android:layout_marginHorizontal="12dp"
                             app:strokeWidth="0dp"
+                            app:cardElevation="4dp"
                             >
 
                             <ImageView
+                                android:id="@+id/icon_haditsarbain"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:src="@drawable/dashboardicon_quran"
@@ -167,15 +239,16 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.card.MaterialCardView
-                            android:id="@+id/icon_kiblatdashboard"
                             android:layout_width="68dp"
                             android:layout_height="68dp"
                             app:cardBackgroundColor="@color/iconBlue"
                             app:cardCornerRadius="12dp"
                             android:layout_marginHorizontal="12dp"
-                            app:strokeWidth="0dp">
+                            app:strokeWidth="0dp"
+                            app:cardElevation="4dp">
 
                             <ImageView
+                                android:id="@+id/icon_kiblatdashboard"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:src="@drawable/dashboardicon_kiblat"
@@ -200,15 +273,16 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.card.MaterialCardView
-                            android:id="@+id/icon_sholatdashboard"
                             android:layout_width="68dp"
                             android:layout_height="68dp"
                             app:cardBackgroundColor="@color/iconYellow"
                             app:cardCornerRadius="12dp"
                             android:layout_marginHorizontal="12dp"
-                            app:strokeWidth="0dp">
+                            app:strokeWidth="0dp"
+                            app:cardElevation="4dp">
 
                             <ImageView
+                                android:id="@+id/icon_sholatdashboard"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:src="@drawable/dashboardicon_sholat"
@@ -250,15 +324,16 @@
                         android:layout_marginVertical="10dp">
 
                         <com.google.android.material.card.MaterialCardView
-                            android:id="@+id/icon_kalenderdashboard"
                             android:layout_width="68dp"
                             android:layout_height="68dp"
                             app:cardBackgroundColor="@color/iconRed"
                             app:cardCornerRadius="12dp"
                             android:layout_marginHorizontal="12dp"
-                            app:strokeWidth="0dp">
+                            app:strokeWidth="0dp"
+                            app:cardElevation="4dp">
 
                             <ImageView
+                                android:id="@+id/icon_kalenderdashboard"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:src="@drawable/dashboardicon_kalender"
@@ -283,18 +358,19 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.card.MaterialCardView
-                            android:id="@+id/icon_kajiandashboard"
                             android:layout_width="68dp"
                             android:layout_height="68dp"
                             app:cardBackgroundColor="@color/iconGray"
                             app:cardCornerRadius="12dp"
                             android:layout_marginHorizontal="12dp"
-                            app:strokeWidth="0dp">
+                            app:strokeWidth="0dp"
+                            app:cardElevation="4dp">
 
                             <ImageView
+                                android:id="@+id/icon_kajiandashboard"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/dashboardicon_kajian"
+                                android:src="@drawable/dashboardicon_masjid"
                                 android:scaleType="centerInside"
                                 android:scaleY="0.65"
                                 android:scaleX="0.65"/>
@@ -304,7 +380,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Kajian"
+                            android:text="Masjid"
                             android:textColor="@color/defaultBlack"
                             android:layout_gravity="center"/>
 
@@ -316,16 +392,17 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.card.MaterialCardView
-                            android:id="@+id/icon_doadoadashboard"
                             android:layout_width="68dp"
                             android:layout_height="68dp"
                             app:cardBackgroundColor="@color/iconOrange1"
                             app:cardCornerRadius="12dp"
                             android:layout_marginHorizontal="12dp"
                             app:strokeWidth="0dp"
+                            app:cardElevation="4dp"
                             >
 
                             <ImageView
+                                android:id="@+id/icon_doadoadashboard"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:src="@drawable/dashboardicon_doadoa"
@@ -358,8 +435,9 @@
             </LinearLayout>
 
             <LinearLayout
+
                 android:layout_width="match_parent"
-                android:layout_height="350dp"
+                android:layout_height="270dp"
                 android:orientation="vertical"
                 android:layout_marginTop="30dp">
 
@@ -389,6 +467,7 @@
                             android:layout_height="176dp"
                             app:cardBackgroundColor="@color/iconOrange2"
                             app:cardCornerRadius="20dp"
+                            app:strokeWidth="0dp"
                             android:layout_marginHorizontal="6dp">
 
                             <ImageView
@@ -411,6 +490,7 @@
                         <com.google.android.material.card.MaterialCardView
                             android:layout_width="300dp"
                             android:layout_height="176dp"
+                            app:strokeWidth="0dp"
                             app:cardBackgroundColor="@color/iconOrange2"
                             app:cardCornerRadius="20dp"
                             android:layout_marginHorizontal="6dp">
@@ -437,6 +517,7 @@
                             android:layout_height="176dp"
                             app:cardBackgroundColor="@color/iconOrange2"
                             app:cardCornerRadius="20dp"
+                            app:strokeWidth="0dp"
                             android:layout_marginHorizontal="6dp">
 
                             <ImageView

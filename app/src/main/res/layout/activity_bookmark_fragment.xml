@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hamas.app_project_suhuf.BookmarkFragment"
+    android:background="@color/defaultBackground"
+    android:orientation="vertical"
+    app:strokeWidth="0dp">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:background="@color/defaultBackground">
+       <com.google.android.material.appbar.MaterialToolbar
+           android:id="@+id/toolbar_bookmark"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:menu="@menu/menu_bookmark"
+           app:title="Bookmarks"
+           android:theme="@style/ToolbarTheme"
+           app:titleTextColor="@color/defaultBlack"
+           android:background="@color/defaultBackground"
+           app:subtitleTextColor="@color/defaultGray1"
+           android:elevation="12dp"/>
+
+       <TextView
+           android:visibility="gone"
+           android:id="@+id/tv_bkEmpty"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:padding="42dp"
+           android:text="Bookmark is Empty."
+           android:textColor="@color/defaultGray1"/>
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/rv_bookmark"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+           tools:listitem="@layout/item_bookmark"/>
+
+   </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

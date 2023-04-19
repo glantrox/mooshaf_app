@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <com.google.android.material.card.MaterialCardView
+       android:id="@+id/card_number_hadits"
+       android:layout_width="60dp"
+       android:layout_height="60dp"
+       app:cardBackgroundColor="@color/mainRed"
+       app:strokeWidth="0dp"
+       app:cardCornerRadius="12dp"
+       android:layout_margin="6dp">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="42"
+           android:textSize="22dp"
+           android:layout_gravity="center"
+           android:fontFamily="@font/inter_bold"
+           android:textColor="@color/white"/>
+
+   </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_number_hadits"
+        android:layout_marginTop="4dp"
+        app:dividerColor="@color/defaultGray1"
+        android:layout_margin="4dp"/>
+
+</RelativeLayout>

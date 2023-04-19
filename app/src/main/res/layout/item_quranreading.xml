@@ -4,97 +4,145 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    >
-
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:orientation="vertical"
-       android:padding="12dp">
-       <RelativeLayout
-           android:id="@+id/top_navbar"
-           android:layout_width="match_parent"
-           android:layout_height="50dp">
-
-       <ImageView
-           android:id="@+id/backbutton_surah"
-           android:layout_width="wrap_content"
-           android:layout_height="match_parent"
-           android:src="@drawable/icon_back3"/>
-
-           <TextView
-               android:id="@+id/text_surah_name"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:layout_marginStart="25dp"
-               android:layout_marginTop="4dp"
-               android:fontFamily="@font/inter_bold"
-               android:text="Surah Name - Arabic "
-               android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
-               android:textSize="27dp" />
-
-
-       <com.google.android.material.card.MaterialCardView
-           android:id="@+id/menu_button"
-           android:layout_width="39dp"
-           android:layout_height="39dp"
-           app:cardBackgroundColor="@color/defaultGray"
-           android:layout_alignParentEnd="true"
-           android:layout_centerInParent="true"
-           app:strokeWidth="0dp">
-           <ImageButton
-               android:layout_width="match_parent"
-               android:layout_height="match_parent"
-               android:layout_alignParentEnd="true"
-               android:src="@drawable/ic_baseline_menu_24"
-               app:tint="@color/mainWhite"
-               android:background="@color/defaultGray"/>
-
-       </com.google.android.material.card.MaterialCardView>
-       </RelativeLayout>
-
-   </LinearLayout>
-
-
-
-
-
-
-
-    <com.google.android.material.divider.MaterialDivider
-        android:id="@+id/top_divider"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:dividerColor="@color/defaultGray" />
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="12dp"
         android:orientation="vertical">
+
         <com.google.android.material.textview.MaterialTextView
-            android:layout_marginTop="8dp"
-            android:id="@+id/text_ayah_quran"
+            android:id="@+id/text_basmallah_quran"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
-            android:fontFamily="@font/arabic_uthmanichafs"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="8dp"
             android:layout_marginBottom="16dp"
+            android:elegantTextHeight="true"
+            android:fontFamily="@font/arabic_uthmanichafs"
             android:lineHeight="50dp"
-            android:textSize="40dp"
-            android:textAlignment="viewEnd"
-            android:text="لَمْ يَكُنِ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَٰبِ وَٱلْمُشْرِكِينَ مُنفَكِّينَ حَتَّىٰ تَأْتِيَهُمُ ٱلْبَيِّنَةُ"/>
+            android:textColor="@color/defaultBlack"
+            android:text="بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+            android:textSize="32dp" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/divider_basmallah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:dividerColor="@color/defaultDivider"
+            android:layout_margin="12dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_ayah"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:cardBackgroundColor="@color/defaultBackground"
+                app:strokeWidth="0dp">
+
+                <TextView
+                    android:id="@+id/text_no_ayah"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/inter_black"
+                    android:gravity="center"
+                    android:text="102"
+                    android:textColor="@color/defaultGray"
+                    android:textSize="14dp" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_ayah_quran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:elegantTextHeight="true"
+                android:fontFamily="@font/arabic_uthmanichafs"
+                android:lineHeight="50dp"
+                android:textColor="@color/defaultBlack"
+                android:text="لَمْ يَكُنِ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَٰبِ وَٱلْمُشْرِكِينَ مُنفَكِّينَ حَتَّىٰ تَأْتِيَهُمُ ٱلْبَيِّنَةُ"
+                android:textAlignment="viewEnd"
+                android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+                android:textSize="42dp" />
+        </RelativeLayout>
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/text_ayah_translation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/defaultBlack"
             android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
             android:text="Orang-orang kafir yakni ahli Kitab dan orang-orang musyrik (mengatakan bahwa mereka) tidak akan meninggalkan (agamanya) sebelum datang kepada mereka bukti yang nyata"
             android:fontFamily="@font/inter_regular"
             android:textAlignment="textEnd"
             android:textSize="18dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginTop="19dp"
+            >
+
+            <ImageView
+                android:id="@+id/btn_play_ayah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:hapticFeedbackEnabled="true"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:src="@drawable/ic_baseline_play_circle_filled_24"
+                app:tint="@color/variatedGray" />
+
+            <ImageView
+                android:id="@+id/btn_bookmark_ayah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_baseline_bookmark_border_24"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:tint="@color/defaultGray"
+                android:layout_toLeftOf="@+id/btn_copy_ayah"/>
+
+            <ImageView
+                android:id="@+id/btn_copy_ayah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_toLeftOf="@+id/btn_share_ayah"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_baseline_content_copy_24"
+                app:tint="@color/defaultGray"
+                android:layout_marginStart="12dp"/>
+
+            <ImageView
+                android:id="@+id/btn_share_ayah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="12dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:paddingEnd="8dp"
+                android:src="@drawable/ic_baseline_share_24"
+                app:tint="@color/defaultGray" />
+        </RelativeLayout>
+
     </LinearLayout>
 
     <com.google.android.material.divider.MaterialDivider
@@ -102,7 +150,28 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         app:dividerColor="@color/defaultDivider"
-        android:layout_margin="16dp"/>
+        android:layout_margin="12dp"/>
+
+<!--    <com.google.android.material.card.MaterialCardView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        app:strokeColor="@color/mainRed"-->
+<!--        app:cardBackgroundColor="@color/mainRed"-->
+<!--        app:cardCornerRadius="22dp"-->
+<!--        app:strokeWidth="0dp"-->
+<!--        >-->
+<!--        <TextView-->
+<!--            android:id="@+id/text_nextSurah"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="NEXT SURAH"-->
+<!--            android:background="?attr/selectableItemBackgroundBorderless"-->
+<!--            android:textSize="12dp"-->
+<!--            android:textColor="@color/mainWhite"-->
+<!--            android:fontFamily="@font/inter_bold"-->
+<!--            android:padding="8dp"/>-->
+<!--    </com.google.android.material.card.MaterialCardView>-->
 
 
 </LinearLayout>

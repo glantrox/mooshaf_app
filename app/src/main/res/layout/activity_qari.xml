@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/defaultBackground">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewSearchQari"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_navbar_2"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_qari"
+        />
+
+    <LinearLayout
+        android:id="@+id/top_navbar_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainRed"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <RelativeLayout
+            android:id="@+id/top_navbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/mainRed">
+
+            <ImageView
+                android:id="@+id/backbutton_qariSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:hapticFeedbackEnabled="true"
+                android:src="@drawable/icon_back3"
+                app:tint="@color/mainWhite" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_toRightOf="@id/backbutton_qariSearch"
+                app:cardBackgroundColor="@color/mainWhite"
+                app:cardCornerRadius="8dp"
+                app:strokeWidth="0dp">
+
+                <EditText
+                    android:id="@+id/search_barQari"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:drawableStart="@drawable/icon_search"
+                    android:hint="Find Qari'"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:paddingStart="12dp"
+                    android:textColor="@color/mainBlack"
+                    android:textColorHint="@color/defaultGray"
+                    android:textSize="14dp" />
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--    <com.google.android.material.card.MaterialCardView-->
+    <!--        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"-->
+    <!--        android:layout_width="250dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        app:cardCornerRadius="18dp"-->
+    <!--        app:strokeWidth="0dp"-->
+    <!--        android:layout_centerInParent="true"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginBottom="16dp"-->
+    <!--        app:cardBackgroundColor="@color/mainRed"-->
+    <!--        android:elevation="12dp">-->
+    <!--        <RelativeLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent">-->
+    <!--          <ImageView-->
+    <!--              android:id="@+id/btn_play_surah"-->
+    <!--              android:layout_width="wrap_content"-->
+    <!--              android:layout_height="wrap_content"-->
+    <!--              android:src="@drawable/icon_play1"-->
+    <!--              android:layout_centerVertical="true"-->
+    <!--              android:layout_centerInParent="true"-->
+    <!--              android:scaleX="1.5"-->
+    <!--              android:scaleY="1.5"/>-->
+
+    <!--        </RelativeLayout>-->
+    <!--    </com.google.android.material.card.MaterialCardView>-->
+
+</RelativeLayout>

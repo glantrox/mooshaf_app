@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:id="@+id/btn_copy_footnotes"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_share_24"
+        android:iconTint="@color/defaultGray1"
+        android:title="Button Back"
+        app:showAsAction="always" />
+    <item
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:id="@+id/btn_back"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_close_24"
+        android:iconTint="@color/defaultGray1"
+        android:title="Button Back"
+        app:showAsAction="always" />
+
+</menu>

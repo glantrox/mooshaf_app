@@ -4,20 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentSettings"
+    tools:context="com.hamas.app_project_suhuf.FragmentSettings"
     android:background="@color/defaultBackground">
+
 
    <LinearLayout
        android:layout_width="match_parent"
        android:layout_height="match_parent"
-       android:orientation="vertical">
+       android:orientation="vertical"
+      >
        <LinearLayout
            android:layout_width="match_parent"
            android:layout_height="wrap_content">
            <TextView
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:text="Settings"
+               android:text="Settings "
                android:fontFamily="@font/inter_bold"
                android:textSize="30dp"
                android:textColor="@color/defaultBlack"
@@ -29,10 +31,112 @@
            app:dividerColor="@color/defaultGray2"
            android:layout_marginBottom="8dp"
            />
+
        <com.google.android.material.card.MaterialCardView
            android:layout_width="match_parent"
            android:layout_height="40dp"
            android:layout_margin="8dp"
+           style="@style/Widget.Material3.CardView.Elevated"
+           app:cardCornerRadius="12dp"
+           android:id="@+id/card_gotoGeneral"
+           app:cardBackgroundColor="@color/defaultGray2">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="horizontal">
+               <LinearLayout
+                   android:layout_width="170dp"
+                   android:layout_height="match_parent"
+                   android:gravity="center">
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/ic_baseline_settings_24"
+                       app:tint="@color/defaultGray1"
+                       android:layout_gravity="center_vertical"
+                       android:layout_marginStart="12dp"/>
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="General"
+                       android:layout_gravity="center_vertical"
+                       android:layout_marginStart="9dp"
+                       android:fontFamily="@font/inter_regular"
+                       android:textColor="@color/defaultBlack"/>
+
+               </LinearLayout>
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                       android:layout_alignParentEnd="true"
+                       android:layout_centerVertical="true"
+                       android:layout_marginEnd="12dp"/>
+
+               </RelativeLayout>
+           </LinearLayout>
+
+       </com.google.android.material.card.MaterialCardView>
+       <com.google.android.material.card.MaterialCardView
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:layout_margin="8dp"
+           style="@style/Widget.Material3.CardView.Elevated"
+           app:cardCornerRadius="12dp"
+           android:id="@+id/card_gotoAppearance"
+           app:cardBackgroundColor="@color/defaultGray2">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="horizontal">
+               <LinearLayout
+                   android:layout_width="170dp"
+                   android:layout_height="match_parent"
+                   android:gravity="center">
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/ic_baseline_wallpaper_24"
+                       android:layout_gravity="center_vertical"
+                       app:tint="@color/defaultGray1"
+                       android:layout_marginStart="12dp"/>
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="Appearance"
+                       android:layout_gravity="center_vertical"
+                       android:layout_marginStart="9dp"
+                       android:fontFamily="@font/inter_regular"
+                       android:textColor="@color/defaultBlack"/>
+
+               </LinearLayout>
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                       android:layout_alignParentEnd="true"
+                       android:layout_centerVertical="true"
+                       android:layout_marginEnd="12dp"/>
+
+               </RelativeLayout>
+           </LinearLayout>
+
+       </com.google.android.material.card.MaterialCardView>
+       <com.google.android.material.card.MaterialCardView
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:layout_margin="8dp"
+           android:id="@+id/setting_qari"
 
            style="@style/Widget.Material3.CardView.Elevated"
            app:cardCornerRadius="12dp"
@@ -42,66 +146,51 @@
                android:layout_height="match_parent"
                android:orientation="horizontal">
                <LinearLayout
-                   android:layout_width="120dp"
+                   android:layout_width="170dp"
                    android:layout_height="match_parent"
-                   android:orientation="vertical"
                    android:gravity="center">
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/ic_baseline_record_voice_over_24"
+                       android:layout_gravity="center_vertical"
+                       app:tint="@color/defaultGray1"
+                       android:layout_marginStart="12dp"/>
+
                    <TextView
                        android:layout_width="match_parent"
                        android:layout_height="wrap_content"
-                       android:text="Night Mode"
-                       android:layout_marginStart="12dp"
+                       android:text="Qari"
+                       android:layout_gravity="center_vertical"
+                       android:layout_marginStart="9dp"
                        android:fontFamily="@font/inter_regular"
                        android:textColor="@color/defaultBlack"/>
 
                </LinearLayout>
-               <com.google.android.material.switchmaterial.SwitchMaterial
-                   android:id="@+id/switch_night"
+               <RelativeLayout
                    android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:paddingEnd="12dp"
-                   android:theme="@style/SCBSwitch"
-                   android:layout_gravity="center"/>
-           </LinearLayout>
+                   android:layout_height="match_parent">
 
-       </com.google.android.material.card.MaterialCardView>
-
-       <com.google.android.material.card.MaterialCardView
-           android:layout_width="match_parent"
-           android:layout_height="40dp"
-           android:layout_margin="8dp"
-
-           style="@style/Widget.Material3.CardView.Elevated"
-           app:cardCornerRadius="12dp"
-           app:cardBackgroundColor="@color/defaultGray2">
-           <LinearLayout
-               android:layout_width="match_parent"
-               android:layout_height="match_parent"
-               android:orientation="horizontal">
-               <LinearLayout
-                   android:layout_width="120dp"
-                   android:layout_height="match_parent"
-                   android:orientation="vertical"
-                   android:gravity="center">
                    <TextView
-                       android:layout_width="match_parent"
-                       android:layout_height="wrap_content"
-                       android:text="Focus Mode"
-                       android:layout_marginStart="12dp"
-                       android:fontFamily="@font/inter_regular"
-                       android:textColor="@color/defaultBlack"/>
+                       android:id="@+id/text_settingQari"
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:layout_alignParentEnd="true"
+                       android:layout_marginEnd="22dp"
+                       android:textSize="12dp"
+                       android:fontFamily="@font/inter_bold"
+                       android:gravity="center_vertical"
+                       android:text="Mishary Rasheed"
+                       android:textColor="@color/defaultBlack" />
 
-               </LinearLayout>
-               <com.google.android.material.switchmaterial.SwitchMaterial
-                   android:id="@+id/switch_focus"
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:paddingEnd="12dp"
-                   android:theme="@style/SCBSwitch"
-                   android:layout_gravity="center"/>
+               </RelativeLayout>
            </LinearLayout>
 
        </com.google.android.material.card.MaterialCardView>
+
+
+
+
 
 
 

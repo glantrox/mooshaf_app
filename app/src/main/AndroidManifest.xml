@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.app_project_suhuf">
+    package="hamas.app_project_suhuf">
+    <!-- for start foreground service -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- for play in the background -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Optional: for play local music -->
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" /> <!-- Optional: for play network music -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -14,14 +27,26 @@
         android:theme="@style/Theme.Project_suhuf"
         tools:targetApi="31">
         <activity
-            android:name=".FragmentSettings"
+            android:name="com.hamas.app_project_suhuf.HaditsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.hamas.app_project_suhuf.QiblatActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.hamas.app_project_suhuf.ShalatScheduleActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.hamas.app_project_suhuf.SearchActivity2"
+            android:exported="false" />
+        <activity
+            android:name="com.hamas.app_project_suhuf.FragmentSettings"
             android:exported="false"
             tools:ignore="Instantiatable" />
         <activity
-            android:name=".QuranActivity"
+            android:name="com.hamas.app_project_suhuf.QuranActivity"
             android:exported="true" />
         <activity
-            android:name=".ActivitySplashScreen"
+            android:name="com.hamas.app_project_suhuf.ActivitySplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,8 +55,26 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="true" />
+            android:name="com.hamas.app_project_suhuf.MainActivity"
+            android:exported="true" /> <!-- Player Service -->
+        <service
+            android:name="com.hamas.app_project_suhuf.MyPlayerService"
+            android:exported="true"
+            android:foregroundServiceType="mediaPlayback"
+            tools:ignore="Instantiatable"
+            android:permission="TODO">
+            <intent-filter>
+                <action android:name="android.media.browse.MediaBrowserService" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="androidx.media.session.MediaButtonReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

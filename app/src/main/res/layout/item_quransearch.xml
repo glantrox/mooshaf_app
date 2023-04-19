@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mainWhite">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        app:cardCornerRadius="16dp"
+        app:strokeWidth="0dp"
+        app:cardBackgroundColor="@color/mainRed"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/text_no_ayahSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_bold"
+                    android:text="Al-Baqarah: 21"
+                    android:textColor="@color/mainWhite"
+                    android:textSize="18dp"
+                    app:tint="@color/mainWhite" />
+
+                <ImageView
+                    android:id="@+id/btn_copy_ayahSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="37dp"
+                    android:layout_toLeftOf="@id/btn_share_ayahSearch"
+                    android:src="@drawable/ic_baseline_content_copy_24"
+                    app:tint="@color/mainWhite" />
+
+                <ImageView
+                    android:id="@+id/btn_share_ayahSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_marginEnd="6dp"
+                    app:tint="@color/mainWhite"
+                    android:src="@drawable/ic_baseline_share_24" />
+
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_no_ayahSearch"
+                    android:layout_marginTop="8dp"
+                    app:dividerColor="@color/mainWhite" />
+
+
+            </RelativeLayout>
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_ayah_quranSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="يَٰٓأَيُّهَا ٱلنَّاسُ ٱتَّقُواْ رَبَّكُمۡۚ إِنَّ زَلۡزَلَةَ ٱلسَّاعَةِ شَيۡءٌ عَظِيمٞ١ "
+                android:textAlignment="center"
+                android:fontFamily="@font/arabic_uthmanichafs"
+                android:textColor="@color/mainWhite"
+                android:textSize="35dp"
+                android:padding="12dp"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_ayah_translationSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mainWhite"
+                android:textAlignment="center"
+                android:text="Hai manusia, bertakwalah kepada Tuhanmu; sesungguhnya kegoncangan hari kiamat itu adalah suatu kejadian yang sangat besar (dahsyat). (QS Al-Ḥajj:1) "
+                android:fontFamily="@font/arabic_uthmanichafs"
+                android:textSize="14dp"
+                android:padding="12dp"/>
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
+

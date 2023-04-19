@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:cardBackgroundColor="@color/defaultGray2"
+        android:layout_margin="8dp"
+        app:strokeWidth="0dp"
+        app:cardCornerRadius="12dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+           <com.google.android.material.card.MaterialCardView
+               android:id="@+id/card_ayahNumber"
+               android:layout_width="60dp"
+               android:layout_height="match_parent"
+               android:layout_margin="6dp"
+               app:strokeWidth="0dp"
+               app:cardBackgroundColor="@color/iconRed">
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <TextView
+                       android:id="@+id/tv_ayahNo_bookmark"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerInParent="true"
+                       android:fontFamily="@font/arabic_jannaltbold"
+                       android:text="123"
+                       android:textColor="@color/mainWhite"
+                       android:textSize="19dp" />
+               </RelativeLayout>
+           </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/tv_surahName_bookmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="12dp"
+                android:layout_toRightOf="@+id/card_ayahNumber"
+                android:text="Al-Baqarah"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/btn_deleteBookmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_baseline_delete_24" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

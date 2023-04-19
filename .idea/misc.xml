@@ -3,28 +3,67 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.1" />
+        <entry key="../../Library/Android/sdk/platforms/android-32/data/res/layout/activity_list_item.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.124" />
         <entry key="app/src/main/res/drawable/asseticon_home.xml" value="0.1585" />
+        <entry key="app/src/main/res/drawable/bottom_nav_tab_background.xml" value="0.1115" />
+        <entry key="app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.12" />
         <entry key="app/src/main/res/drawable/ic_baseline_menu_book_24.xml" value="0.1365" />
+        <entry key="app/src/main/res/drawable/ic_baseline_play_circle_filled_24.xml" value="0.157" />
         <entry key="app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.1365" />
+        <entry key="app/src/main/res/drawable/ic_baseline_wallpaper_24.xml" value="0.1115" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.235" />
+        <entry key="app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.124" />
         <entry key="app/src/main/res/drawable/icon_back3.xml" value="0.1365" />
+        <entry key="app/src/main/res/drawable/icon_bookmark1.xml" value="0.2075" />
+        <entry key="app/src/main/res/drawable/selector.xml" value="0.1465" />
+        <entry key="app/src/main/res/drawable/shadow.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_ayah.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_bookmark.xml" value="0.3185121846943138" />
+        <entry key="app/src/main/res/layout/activity_bookmark_fragment.xml" value="0.3069687900812313" />
+        <entry key="app/src/main/res/layout/activity_bottom_set_arabic_fragment.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_fragment_set_appearance.xml" value="0.2538984059777816" />
+        <entry key="app/src/main/res/layout/activity_fragment_set_general.xml" value="0.2942028507201679" />
         <entry key="app/src/main/res/layout/activity_fragment_settings.xml" value="0.19610507246376813" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.20126190185546877" />
-        <entry key="app/src/main/res/layout/activity_quran.xml" value="0.1748799641927083" />
+        <entry key="app/src/main/res/layout/activity_hadits.xml" value="0.2706284737067123" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.22662353515625003" />
+        <entry key="app/src/main/res/layout/activity_qari.xml" value="0.20649850363403163" />
+        <entry key="app/src/main/res/layout/activity_qiblat.xml" value="0.21305530371713507" />
+        <entry key="app/src/main/res/layout/activity_quran.xml" value="0.3090026855468751" />
+        <entry key="app/src/main/res/layout/activity_search.xml" value="0.274493408203125" />
+        <entry key="app/src/main/res/layout/activity_shalat_schedule.xml" value="0.1751368624286811" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_work_in_progress.xml" value="0.19610507246376813" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1480209350585938" />
-        <entry key="app/src/main/res/layout/fragment_quran.xml" value="0.17417417417417416" />
-        <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.15896453857421877" />
+        <entry key="app/src/main/res/layout/bottom_nav_tab_background.xml" value="0.14918512327622233" />
+        <entry key="app/src/main/res/layout/bottomsheet_footnotes.xml" value="1.019195556640625" />
+        <entry key="app/src/main/res/layout/bottomsheet_setting_arabic.xml" value="0.2543822146216332" />
+        <entry key="app/src/main/res/layout/fragment_bottom_sheet_settings.xml" value="0.33402088780136074" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1781158447265625" />
+        <entry key="app/src/main/res/layout/fragment_quran.xml" value="0.13304721030042918" />
+        <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.24052124023437504" />
+        <entry key="app/src/main/res/layout/item_bookmark.xml" value="0.3308992696552513" />
+        <entry key="app/src/main/res/layout/item_haditslist.xml" value="0.27242443317936854" />
+        <entry key="app/src/main/res/layout/item_qari.xml" value="0.2535271483539974" />
         <entry key="app/src/main/res/layout/item_quran.xml" value="0.20445353190104168" />
-        <entry key="app/src/main/res/layout/item_quranreading.xml" value="0.25556589762369797" />
-        <entry key="app/src/main/res/layout/item_surah.xml" value="0.262274169921875" />
+        <entry key="app/src/main/res/layout/item_quranreading.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/item_quransearch.xml" value="0.3554290771484375" />
+        <entry key="app/src/main/res/layout/item_surah.xml" value="0.32541809082031253" />
+        <entry key="app/src/main/res/layout/layout_swipequran.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/list_ar.xml" value="0.2056434373663959" />
+        <entry key="app/src/main/res/layout/list_qori.xml" value="0.20649850363403163" />
+        <entry key="app/src/main/res/layout/list_translation.xml" value="0.20649850363403163" />
+        <entry key="app/src/main/res/layout/slide_layoutquran.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/menu_bookmark.xml" value="0.31765711842667804" />
         <entry key="app/src/main/res/menu/menu_navbar.xml" value="0.29216766357421875" />
+        <entry key="app/src/main/res/menu/menu_toolbar.xml" value="0.2543822146216332" />
+        <entry key="app/src/main/res/menu/menu_toolbar_setting.xml" value="0.2535271483539974" />
         <entry key="app/src/main/res/menu/popup_menu_surah.xml" value="0.30885416666666665" />
+        <entry key="app/src/main/res/menu/test_menu.xml" value="0.2535271483539974" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

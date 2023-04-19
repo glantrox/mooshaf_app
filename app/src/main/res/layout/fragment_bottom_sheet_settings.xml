@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hamas.app_project_suhuf.BottomSheetSettings"
+    android:orientation="vertical"
+    android:background="@color/defaultBackground"
+    app:strokeWidth="0dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/defaultBackground">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Quick Settings"
+        style="@style/ToolbarTheme"
+        app:menu="@menu/menu_toolbar_setting"
+        android:background="@color/defaultBackground"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        app:titleTextColor="@color/defaultBlack"
+        style="@style/Widget.Material3.CardView.Elevated"
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="@color/defaultGray2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Focus Mode"
+                    android:layout_marginStart="12dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="@color/defaultBlack"/>
+
+
+
+            </LinearLayout>
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch_focusQS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="12dp"
+                android:theme="@style/SCBSwitch"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+
+        style="@style/Widget.Material3.CardView.Elevated"
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="@color/defaultGray2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tajweed Color"
+                    android:layout_marginStart="12dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="@color/defaultBlack"/>
+
+
+            </LinearLayout>
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch_tajweedQS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="12dp"
+                android:theme="@style/SCBSwitch"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+
+        style="@style/Widget.Material3.CardView.Elevated"
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="@color/defaultGray2">
+
+            <LinearLayout
+                android:id="@+id/linear_fontsize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Arabic Font "
+                        android:layout_marginStart="12dp"
+                        android:fontFamily="@font/inter_regular"
+                        android:textColor="@color/defaultBlack"/>
+
+
+                </LinearLayout>
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/sliderQuickSettings_ARSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:valueFrom="28.0"
+                    android:valueTo="45.0"
+                    app:trackColor="@color/defaultGray"
+                    android:layout_marginHorizontal="12dp"
+                    app:thumbColor="@color/mainRed"/>
+
+
+            </LinearLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardQuickSettings_setTranslation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+
+        style="@style/Widget.Material3.CardView.Elevated"
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="@color/defaultGray2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Translation "
+                    android:layout_marginStart="12dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="@color/defaultBlack"/>
+
+
+            </LinearLayout>
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderQuickSettings_ENSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:valueFrom="12.0"
+                android:valueTo="25.0"
+                app:trackColor="@color/defaultGray"
+                android:layout_marginHorizontal="12dp"
+                app:thumbColor="@color/mainRed"/>
+
+
+        </LinearLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

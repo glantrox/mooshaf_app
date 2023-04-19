@@ -7,28 +7,49 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.app_project_suhuf.FragmentHome"
+        android:name="com.hamas.app_project_suhuf.FragmentHome"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
+        android:id="@+id/navigation_set_appearance"
+        android:name="com.hamas.app_project_suhuf.FragmentSetAppearance"
+        android:label="fragment_set_appearance"
+        tools:layout="@layout/activity_fragment_set_appearance"
+        />
+    <fragment
+        android:id="@+id/navigation_set_general"
+        android:name="com.hamas.app_project_suhuf.FragmentSetGeneral"
+        android:label="fragment_set_general"
+        tools:layout="@layout/activity_fragment_set_general"
+        />
+    <fragment
         android:id="@+id/navigation_quran"
-        android:name="com.example.app_project_suhuf.FragmentQuran"
+        android:name="com.hamas.app_project_suhuf.FragmentQuran"
         android:label="fragment_quran"
         tools:layout="@layout/fragment_quran" >
         <action
             android:id="@+id/action_navigation_quran_to_navigation_home"
             app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_navigation_quran_to_navigation_settings"
+            app:destination="@id/navigation_settings" />
 
     </fragment>
 
     <fragment
         android:id="@+id/navigation_settings"
-        android:name="com.example.app_project_suhuf.FragmentSettings"
+        android:name="com.hamas.app_project_suhuf.FragmentSettings"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" >
         <action
             android:id="@+id/action_navigation_quran_to_navigation_home"
             app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_navigation_settings_to_navigation_set_general"
+            app:destination="@id/navigation_set_general" />
+        <action
+            android:id="@+id/action_navigation_settings_to_navigation_set_appearance2"
+            app:destination="@id/navigation_set_appearance" />
 
     </fragment>
 

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:id="@+id/btn_deleteAllBookmark"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_delete_sweep_24"
+        android:iconTint="@color/defaultGray1"
+        android:title="Button Delete All"
+        app:showAsAction="ifRoom" />
+    <item
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:id="@+id/btn_dismissSetting"
+        android:enabled="true"
+        android:icon="@drawable/icon_back3"
+        android:iconTint="@color/defaultGray1"
+        android:title="Button Back"
+        app:showAsAction="always" />
+
+</menu>

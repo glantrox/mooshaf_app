@@ -22,6 +22,23 @@
     <color name="iconOrange1">#FFD2AB</color>
     <color name="iconOrange2">#FECA80</color>
 
+    <!-- Color Tajweed -->
+    <color name="color_qalqala">#ff2f9900</color>
+    <color name="color_iqlab">#ff3164c5</color>
+    <color name="color_idgham">#ffb955c8</color>
+    <color name="color_ikhfa">#ffb60000</color>
+    <color name="color_ghunna">#ffd16a00</color>
+    <color name="color_idghamwo">#818181</color>
+
+
+
+    <color name="actionbarPurple">#5B2492</color>
+    <color name="actionbarDefault">#FFFFFF</color>
+
+    <color name="variatedGray">#858DAB</color>
+
+
+    v
 
 
 </resources>

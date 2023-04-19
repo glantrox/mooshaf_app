@@ -13,7 +13,7 @@
         <TextView
             android:id="@+id/text_surah_number"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:padding="16dp"
             android:textStyle="bold"
             android:textColor="@color/defaultGray"
@@ -27,7 +27,7 @@
                 android:id="@+id/text_surah_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="5dp"
+
                 android:textStyle="bold"
                 android:text="Al Fatihah"
                 android:textSize="20dp"
@@ -37,17 +37,19 @@
             <TextView
                 android:id="@+id/text_total_ayah"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:textColor="@color/defaultGray"
                 android:text="7 Ayat"
-                android:layout_marginStart="8dp">
+
+                >
             </TextView>
 
         </LinearLayout>
         <TextView
             android:id="@+id/text_surah_arabic"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
             android:layout_marginEnd="12dp"
             android:textSize="20sp"
             android:fontFamily="@font/arabic_uthmanichafs"

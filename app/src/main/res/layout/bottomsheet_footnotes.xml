@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    app:strokeWidth="0dp"
+    android:layout_height="match_parent"
+    >
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@color/defaultBackground">
+       <com.google.android.material.appbar.MaterialToolbar
+           android:id="@+id/toolbar_footnotes"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:menu="@menu/menu_toolbar"
+           app:title="FootNotes"
+           app:subtitle="Surah Al:Baqarah 2"
+           android:theme="@style/ToolbarTheme"
+           app:titleTextColor="@color/defaultBlack"
+           app:subtitleTextColor="@color/defaultGray1"
+           />
+
+       <TextView
+           android:id="@+id/text_footnotes"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="16dp"
+           android:textSize="16sp"
+           android:text="Lorem Ipsum Dolor Sitamet Ancrit OKAWowaoKDAWOKAWOAWKAOW"/>
+   </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

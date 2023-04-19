@@ -1,5 +1,26 @@
 <resources>
-    <string name="app_name">app_project_suhuf</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">Mooshaf</string>
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:textColor">@color/mainWhite</item>
+    </style>
+
+    <style name="BubbleTheme" parent="ThemeOverlay.AppCompat.DayNight">
+        <item name="android:fontFamily">@font/inter_black</item>
+        <item name="android:textColor">@color/mainWhite</item>
+    </style>
+
+    <style name="WindowAnimationFadeInOut">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/mainWhite</item>
+        <item name="android:color">@color/mainRed</item>
+    </style>
+    <!--    <string name="small_set">Small</string>-->
+    <!--    <string name="medium_set">Medium</string>-->
+    <!--    <string name="large_set">Large</string>-->
 </resources>

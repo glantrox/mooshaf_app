@@ -1,170 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".FragmentQuran"
+    tools:context="com.hamas.app_project_suhuf.FragmentQuran"
     android:background="@color/defaultBackground">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="@color/mainRed">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:src="@drawable/surahselection_qari1" />
-
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="60dp"-->
-<!--            android:layout_marginStart="10dp"-->
-<!--            android:layout_marginEnd="10dp"-->
-<!--            android:gravity="center"-->
-<!--            android:paddingTop="15dp">-->
 
 
 
-<!--&lt;!&ndash;            <com.google.android.material.card.MaterialCardView&ndash;&gt;-->
-<!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
-<!--&lt;!&ndash;                android:layout_height="40dp"&ndash;&gt;-->
-<!--&lt;!&ndash;                android:layout_marginStart="5dp"&ndash;&gt;-->
-<!--&lt;!&ndash;                android:layout_weight="0.33"&ndash;&gt;-->
-<!--&lt;!&ndash;                app:cardBackgroundColor="@color/defaultWhite"&ndash;&gt;-->
-<!--&lt;!&ndash;                app:cardCornerRadius="13dp">&ndash;&gt;-->
 
-<!--&lt;!&ndash;                <RelativeLayout&ndash;&gt;-->
-<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
-<!--&lt;!&ndash;                    android:layout_height="match_parent"&ndash;&gt;-->
-<!--&lt;!&ndash;                    android:backgroundTint="@color/defaultWhite">&ndash;&gt;-->
-
-<!--&lt;!&ndash;                    <TextView&ndash;&gt;-->
-<!--&lt;!&ndash;                        android:layout_width="match_parent"&ndash;&gt;-->
-<!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
-<!--&lt;!&ndash;                        android:layout_centerInParent="true"&ndash;&gt;-->
-<!--&lt;!&ndash;                        android:drawableStart="@drawable/icon_search"&ndash;&gt;-->
-<!--&lt;!&ndash;                        android:drawablePadding="6dp"&ndash;&gt;-->
-<!--&lt;!&ndash;                        android:paddingStart="12dp"&ndash;&gt;-->
-<!--&lt;!&ndash;                        android:text="Search Qari'"&ndash;&gt;-->
-<!--&lt;!&ndash;                        android:textColor="@color/defaultGray"&ndash;&gt;-->
-<!--&lt;!&ndash;                        android:textSize="18dp" />&ndash;&gt;-->
-
-<!--&lt;!&ndash;                </RelativeLayout>&ndash;&gt;-->
-
-
-<!--&lt;!&ndash;            </com.google.android.material.card.MaterialCardView>&ndash;&gt;-->
-
-
-<!--        </LinearLayout>-->
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp">
-
-            <TextView
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/topqori_indicator"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/inter_bold"
-                android:lineSpacingMultiplier="0.80"
-                android:paddingStart="10dp"
-                android:text="Surah\nSelection"
-                android:textColor="@color/mainWhite"
-                android:textSize="40dp" />
+                android:layout_height="180dp"
+                android:elevation="50dp"
+                android:background="@color/mainBlack">
 
-            <TextView
+                <ImageView
+                    android:id="@+id/background_qari"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <!--        <com.google.android.material.card.MaterialCardView-->
+                <!--            android:id="@+id/goto_qari_activity"-->
+                <!--            android:layout_width="match_parent"-->
+                <!--            android:layout_height="35dp"-->
+                <!--            android:layout_marginHorizontal="32dp"-->
+                <!--            android:layout_marginStart="16dp"-->
+                <!--            android:layout_marginTop="16dp"-->
+                <!--            android:layout_marginEnd="16dp"-->
+                <!--            android:layout_marginBottom="16dp"-->
+                <!--            app:strokeWidth="0dp"-->
+                <!--            app:cardCornerRadius="12dp"-->
+                <!--            android:background="@color/mainWhite">-->
+                <!--            <RelativeLayout-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="match_parent">-->
+
+                <!--                <EditText-->
+                <!--                    android:id="@+id/searchSurah_bar"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:background="@android:color/transparent"-->
+                <!--                    android:drawableStart="@drawable/icon_search"-->
+                <!--                    android:hint="Search Surah"-->
+                <!--                    android:imeOptions="actionDone"-->
+                <!--                    android:inputType="text"-->
+                <!--                    android:singleLine="true"-->
+                <!--                    android:paddingStart="12dp" />-->
+                <!--            </RelativeLayout>-->
+
+
+                <!--        </com.google.android.material.card.MaterialCardView>-->
+
+                <RelativeLayout
+                    android:id="@+id/qari_namelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp">
+
+                    <TextView
+                        android:id="@+id/text_qariName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_bold"
+                        android:lineSpacingMultiplier="0.80"
+                        android:paddingStart="10dp"
+                        android:text="Maheer \nAl Muaiqly"
+                        android:textColor="@color/mainWhite"
+                        android:textSize="40dp"
+                        />
+
+
+
+                </RelativeLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/btn_gotoBookmark"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/qari_namelayout"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="8dp"
+                    app:cardBackgroundColor="@color/mainRed"
+                    app:cardCornerRadius="12dp"
+                    app:strokeWidth="0dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/inter_bold"
+                        android:padding="3dp"
+                        android:text="Bookmarks"
+                        android:textColor="@color/mainWhite" />
+                </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+            </RelativeLayout>
+            <FrameLayout
+                android:layout_below="@+id/topqori_indicator"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="85dp"
-                android:fontFamily="@font/arabic_jannaltbold"
-                android:paddingStart="10dp"
-                android:text="القرآن الكريم "
-                android:textAlignment="viewStart"
-                android:textColor="@color/mainWhite"
-                android:textSize="15dp" />
+                android:layout_height="match_parent">
+                <com.l4digital.fastscroll.FastScrollRecyclerView
+                    android:id="@+id/recyclerview_surah"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:bubbleColor="@color/mainRed"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:bubbleTextColor="#ffffff"
+                    android:theme="@style/ToolbarTheme"
+                    app:bubbleTextSize="12dp"
+                    app:bubbleSize="small"
+                    app:handleColor="#999999"
+                    tools:listitem="@layout/item_surah"/>
 
-<!--            <LinearLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="30dp"-->
-<!--                android:layout_marginTop="150dp"-->
-<!--                android:gravity="center_horizontal"-->
-<!--                android:orientation="horizontal">-->
-
-<!--                <com.google.android.material.card.MaterialCardView-->
-<!--                    android:layout_width="120dp"-->
-<!--                    android:layout_height="match_parent"-->
-<!--                    android:layout_marginHorizontal="30dp"-->
-<!--                    app:cardBackgroundColor="@color/mainRed"-->
-<!--                    app:cardCornerRadius="18dp">-->
-
-<!--                    <LinearLayout-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="match_parent"-->
-<!--                        android:orientation="vertical">-->
-
-<!--                        <TextView-->
-<!--                            android:layout_width="wrap_content"-->
-<!--                            android:layout_height="match_parent"-->
-<!--                            android:layout_gravity="center"-->
-<!--                            android:drawableStart="@drawable/icon_play1"-->
-<!--                            android:fontFamily="@font/inter_bold"-->
-<!--                            android:gravity="center"-->
-<!--                            android:text="Play"-->
-<!--                            android:textColor="@color/defaultWhite"-->
-<!--                            android:textSize="12dp" />-->
-
-<!--                    </LinearLayout>-->
-
-<!--                </com.google.android.material.card.MaterialCardView>-->
-
-<!--                <com.google.android.material.card.MaterialCardView-->
-<!--                    android:layout_width="120dp"-->
-<!--                    android:layout_height="match_parent"-->
-<!--                    android:layout_marginHorizontal="30dp"-->
-<!--                    app:cardBackgroundColor="@color/mainRed"-->
-<!--                    app:cardCornerRadius="18dp">-->
-
-<!--                    <LinearLayout-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="match_parent"-->
-<!--                        android:orientation="vertical">-->
-
-<!--                        <TextView-->
-<!--                            android:layout_width="wrap_content"-->
-<!--                            android:layout_height="match_parent"-->
-<!--                            android:layout_gravity="center"-->
-<!--                            android:drawableStart="@drawable/icon_bookmark1"-->
-<!--                            android:fontFamily="@font/inter_bold"-->
-<!--                            android:gravity="center"-->
-<!--                            android:text="Book Mark"-->
-<!--                            android:textColor="@color/defaultWhite"-->
-<!--                            android:textSize="12dp" />-->
-
-<!--                    </LinearLayout>-->
-
-<!--                </com.google.android.material.card.MaterialCardView>-->
-
-
-<!--            </LinearLayout>-->
+            </FrameLayout>
         </RelativeLayout>
 
 
 
-    </RelativeLayout>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerview_surah"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="150dp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/item_surah" />
 
 
 
-
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

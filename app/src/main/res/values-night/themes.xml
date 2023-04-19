@@ -1,12 +1,61 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Project_suhuf" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.Project_suhuf" parent="Theme.Material3.Dark.NoActionBar">
         <!-- Primary brand color. -->
 
         <!-- Secondary brand color. -->
 
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">#EB5F5F</item>
+
+<!--        <item name="android:windowTranslucentStatus">true</item>-->
+        <item name="android:windowTranslucentNavigation">false</item>
+
         <!-- Customize your theme here. -->
     </style>
+
+
+
+
+
+    <style name="SCBSwitch" parent="Theme.AppCompat.DayNight">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">#EB5F5F</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">#f1f1f1
+        </item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">#42221f1f
+        </item>
+    </style>
+
+    <!-- Custom Scrollbar-->
+    <!--    <style name="your_style_name">-->
+    <!--        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>-->
+    <!--        <item name="android:scrollbarStyle">outsideOverlay</item>-->
+    <!--        <item name="android:scrollbars">vertical</item>-->
+    <!--        <item name="android:fadeScrollbars">false</item>-->
+    <!--        <item name="android:scrollbarThumbVertical">@drawable/scroller_thumb</item>-->
+    <!--    </style>-->
+
+
+    <!--        <style name="FragmentHome" parent="@android:style/Theme.Material.Light">-->
+    <!--            <item name="android:actionBarStyle">@style/MyActionBar</item>-->
+    <!--        </style>-->
+
+    <!--        <style name="MyActionBar" parent="@android:style/Widget.Material.Light.ActionBar">-->
+    <!--            <item name="android:background">@color/actionbarPurple</item>-->
+    <!--        </style>-->
+
+
+
+
+
+
+
+
+
 </resources>
+
