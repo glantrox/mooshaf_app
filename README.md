@@ -1,4 +1,7 @@
 ![foto](https://i.imgur.com/HLhSQ9m.png)
+
+[![Technologies](https://skillicons.dev/icons?i=kotlin,androidstudio,sqlite)](https://skillicons.dev)
+
 # 📖 · Mooshaf
 Creating an app is a thrilling experience, especially when it's your first one. As a developer, I was excited to take on the challenge of developing an Android app from scratch. After hours of research and coding, I finally created my first ever Android app - a digitalized Mushaf app, built using Kotlin programming language.
 
