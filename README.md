@@ -1,4 +1,4 @@
-![foto](https://cdn.discordapp.com/attachments/988735884843184210/1095129768732663849/A4_-_1.png)
+![foto](https://i.imgur.com/HLhSQ9m.png)
 # 📖 · Mooshaf
 Creating an app is a thrilling experience, especially when it's your first one. As a developer, I was excited to take on the challenge of developing an Android app from scratch. After hours of research and coding, I finally created my first ever Android app - a digitalized Mushaf app, built using Kotlin programming language.
 
